@@ -12,7 +12,7 @@ public class NiceSignUtils {
         return getSignCode(bArr,bArr2,bArr3);
     }
 
-    public static String[] test2(String str,byte[] bArr, byte[] bArr2, byte[] bArr3){
+    public static String[] encode(String str,byte[] bArr, byte[] bArr2, byte[] bArr3){
 
         return getSignRequest(str,bArr,bArr2,bArr3);
     }

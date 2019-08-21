@@ -20,7 +20,7 @@ public class ServerManager {
     public ServerManager(Context context) {
         InetAddress inetAddress = null;
         try {
-            inetAddress = InetAddress.getByName("192.168.10.213");
+            inetAddress = InetAddress.getByName(NetWorkUtil.getHostIp());
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }

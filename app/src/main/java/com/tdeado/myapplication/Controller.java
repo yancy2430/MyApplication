@@ -17,7 +17,7 @@ import com.yanzhenjie.andserver.annotation.RestController;
 @RequestMapping("/encrypt")
 public class Controller {
     private static final String TAG = "Controller";
-    @RequestMapping("/du")
+    @PostMapping("/du")
     public String du(@RequestParam("str") String str) {
         String key = AESEncrypt.encode(this, str);
         return key;

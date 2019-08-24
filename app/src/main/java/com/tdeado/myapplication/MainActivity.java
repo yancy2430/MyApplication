@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         serverManager = new ServerManager(this);
         serverManager.startServer();
+        Button button = findViewById(R.id.ip);
+        button.setText(NetWorkUtil.getHostIp()+":8080");
     }
 
     @Override

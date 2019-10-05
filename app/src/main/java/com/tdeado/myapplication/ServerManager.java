@@ -55,10 +55,12 @@ public class ServerManager {
      * Start server.
      */
     public void startServer() {
+        
         if (mServer.isRunning()) {
             // TODO The server is already up.
         } else {
             mServer.startup();
+            Log.d(TAG, "startServer: 启动成功");
         }
     }
 

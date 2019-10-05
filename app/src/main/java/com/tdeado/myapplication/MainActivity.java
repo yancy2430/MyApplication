@@ -9,6 +9,11 @@ import android.widget.Button;
 
 import com.duapp.aesjni.AESEncrypt;
 import com.nice.main.helpers.utils.NiceSignUtils;
+import com.yanzhenjie.andserver.annotation.GetMapping;
+import com.yanzhenjie.andserver.annotation.PostMapping;
+import com.yanzhenjie.andserver.annotation.RequestMapping;
+import com.yanzhenjie.andserver.annotation.RequestParam;
+import com.yanzhenjie.andserver.annotation.RestController;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -20,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
         serverManager = new ServerManager(this);
         serverManager.startServer();
         Button button = findViewById(R.id.ip);
-        button.setText(NetWorkUtil.getHostIp()+":8080");
-    }
+        button.setText(NetWorkUtil.getHostIp()+":9999");
 
+    }
     @Override
     protected void onDestroy() {
         super.onDestroy();
